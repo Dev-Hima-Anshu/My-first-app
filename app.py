@@ -1,8 +1,8 @@
 import streamlit as st
 
 
-st.title("My first app")
-st.write("Hello, world!")
+# st.title("My first app")
+# st.write("Hello, world!")
 
 
 # st.title("Greeting App")
@@ -30,10 +30,10 @@ st.write("Hello, world!")
 # st.line_chart(data, x='x', y='y')
 
 
-# import pandas as pd
-# st.title("file upload")
-# uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
-# if uploaded_file is not None:
-#     data = pd.read_csv(uploaded_file)
-#     st.dataframe(data.head)
+import pandas as pd
+st.title("file upload")
+uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
+if uploaded_file is not None:
+    data = pd.read_csv(uploaded_file)
+    st.dataframe(data.head)
 
